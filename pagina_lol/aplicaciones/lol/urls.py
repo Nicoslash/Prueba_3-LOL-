@@ -1,5 +1,9 @@
-from django.urls import path
+from django.urls import path, include
 from .views import *
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register('noticias', NoticiaViewSet)
 
 urlpatterns = [
     path('',home, name = 'index'),
@@ -13,4 +17,6 @@ urlpatterns = [
     path('eliminar_noticia/<id>/',eliminar_noticia, name = 'eliminar_noticia'),
 
     path('<slug:slug>/',detallePost, name = 'detalle_post'),
+
+    path('api/', include(router.urls)),
 ]

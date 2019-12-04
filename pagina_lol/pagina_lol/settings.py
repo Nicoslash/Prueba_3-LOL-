@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'aplicaciones.lol',
     'import_export',
     'ckeditor',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

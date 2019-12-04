@@ -6,6 +6,9 @@ from .models import *
 from .forms import *
 from .urls import *
 
+from rest_framework import viewsets
+from .serializers import *
+
 def home(request):
     posts = Post.objects.filter(estado = True)
     return render(request, 'index.html',{'posts':posts})
@@ -74,3 +77,9 @@ def detallePost(request,slug):
         slug = slug
     )
     return render(request,'post.html',{'detalle_post':post})
+
+class NoticiaViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all()
+    serializer_class = NoticiaSerializer
+
+    

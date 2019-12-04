@@ -1,0 +1,2 @@
+La direccion API es: localhost.../api/noticias
+La direccion de la pagina es: localhost...//
