@@ -1,0 +1,432 @@
+#final{
+	background-color:rgb(0, 0, 0);
+	color:white;
+}
+
+/* Selector por clases*/
+.centrado{
+	text-align:center;
+	padding-top:20px;
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+  }
+  html, body{
+	  font-size: 100%;
+	  font-family: 'Roboto Condensed', sans-serif;
+  }
+  body{
+	  background:#FFFFFF;
+  }
+  /*-- banner --*/
+  .banner{
+	  background: url(../imagen/quienessomos.png) no-repeat 0px 0px;
+	  background-size: cover;
+	  background-color: #FFFFFF;
+  }
+  .banner-universo{
+	background: url(../imagen/teemouwu.png) no-repeat 0px 0px;
+	background-size: cover;
+	background-color: #FFFFFF;
+}
+.banner-campeones{
+	background: url(../imagen/sktuwu.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	background-color: #FFFFFF;
+}
+.banner-novedades{
+	background: url(../imagen/ahriuwu.png) no-repeat 0px 0px;
+	background-size: cover;
+	background-color: #FFFFFF;
+}
+.banner-contactos{
+	background: url(../imagen/suppuwu.png) no-repeat 0px 0px;
+	background-size: cover;
+	background-color: #FFFFFF;
+}
+.banner-foro{
+	background: url(../imagen/suppuwu.png) no-repeat 0px 0px;
+	background-size: cover;
+	background-color: #FFFFFF;
+}
+
+  /*.banner-dot {
+	  background: url(../imagen/.png)repeat 0px 0px;
+	  background-size: 2px;
+	  -webkit-background-size: 2px;
+	  -moz-background-size: 2px;
+	  -o-background-size: 2px;
+	  -ms-background-size: 2px;
+	  padding: 1em 0 0 0;
+  }*/
+
+  /*-- INICIO HEADER TOP / MENU NEGRO ARRIBA --*/
+  .header-top {
+	  padding: 1em 0;
+	  background: rgba(0, 0, 0, 0.52);
+	  /*background-color: black;*/
+  }
+  .header-left {
+	  float: left;
+	  width: 15%;
+  }
+
+
+
+  .header-middle {
+	  color: rgb(248, 248, 248);
+	  float: left;
+	  width: 38%;
+	  margin: .9em 0 0 12em;
+	  text-align: center;
+  }
+  .header-middle ul{
+	  padding:0;
+	  margin:0;
+  }
+
+
+  .header-right {
+	  float: right;
+	  width: 18.2%;
+  }
+
+  /*--  FIN HEADER TOP / MENU NEGRO ARRIBA  --*/
+  /*
+  .header {
+	  border-bottom: 1px solid rgba(84, 160, 22, 0.29);
+  }
+  */
+  /*--INICIO NAV (MENU)--*/
+  .navbar-default {
+	  background: none;
+	  border: none;
+	  margin: 0;
+  }
+  .navbar-default {
+	  background: none;
+	  border: none;
+	  margin: 0;
+  }
+  .navbar-right {
+	  float: none !important;
+	  margin-right: -15px;
+	  text-align: center;
+  }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	  color: #99abd5;
+	  background: none;
+  }
+  .navbar-nav > li {
+	  margin: 0 .5em;
+	  display: inline-block;
+	  float: none;
+  }
+  .navbar-default .navbar-nav > li > a {
+	  color: rgb(233, 233, 233);
+	  font-size: 1em;
+	  padding: 1.8em 0.5em;
+	  position: relative;
+  }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav li a.active {
+	  color: #ffffff;
+  }
+  .navbar-default .navbar-nav > li > a:before {
+	  content: '';
+	  position: absolute;
+	  bottom: -2px;
+	  background: #ffffff;
+	  height: 3px;
+	  width: 0;
+	  left: 0;
+	  transition:.5s all;
+  }
+  .navbar-default .navbar-nav li  a:hover:before,.navbar-default .navbar-nav li a.active:before{
+	  width: 100%;
+  }
+  /*--//FIN NAV (MENU)--*/
+
+  /*-- INICIO BANNER (TITULO CENTRAL PAGINA) --*/
+  .banner-info {
+	  padding: 9em 0;
+  }
+  .uwu-text{
+	  text-align:left;
+  }
+  .uwu-text h3{
+	  color:#FFFFFF;
+	  font-size:1em;
+	  margin:0;
+  }
+  .uwu-text h2{
+	  color: #ffffff;
+	  font-size: 4em;
+	  margin: .5em 0 1em;
+	  font-family: 'Poppins', sans-serif;
+  }
+  .uwu-text label {
+	  width: 78px;
+	  height: 2px;
+	  background-color: #fff;
+	  margin: 1em 0;
+  }
+  .uwu-left{
+	  margin:left;
+  }
+  /*pagina universo*/
+  .uwu-text-universo{
+  text-align:right;
+}
+.uwu-text-universo h3{
+  color:#FFFFFF;
+  font-size:1em;
+  margin:0;
+}
+.uwu-text-universo h2{
+  color: #ffffff;
+  font-size: 4em;
+  margin: .5em 0 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.uwu-text-universo label {
+  width: 78px;
+  height: 2px;
+  background-color: #fff;
+  margin: 1em 0;
+}
+.uwu-left-universo{
+  margin:right;
+}
+/*pagina universo*/
+
+  /*-- //TERMINO BANNER (TITULO CENTRAL PAGINA) --*/
+
+  /*-- INICIO QUIENESSOMOS --*/
+.quienessomos{
+	padding:5em 0;
+}
+.about-bottom{
+	padding:5em 0 0;
+}
+.agileits_quienessomos_grid_right h{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.agileits_quienessomos_grid_right p{
+    margin: 2em 0 0em;
+    line-height: 2em;
+    color: #999;
+    font-size: .875em;
+}
+.agileits_welcome_grid_right p i{
+	display:block;
+	margin:1em 0 0;
+
+}
+.centrito_uwu{
+	text-align: center;
+}
+.img_uwuwuwuwu{
+	width: 80px;
+	height: 50px;
+
+}
+/*-- //TERMINO QUIENESSOMOS --*/
+
+/*-- INICIO CAMPIONES --*/
+.campiones{
+	padding:5em 0;
+}
+.about-bottom{
+	padding:5em 0 0;
+}
+.agileits_campiones_grid_right h{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.agileits_camiopnes_grid_right p{
+    margin: 2em 0 0em;
+    line-height: 2em;
+    color: #999;
+    font-size: .875em;
+}
+.agileits_welcome_grid_right p i{
+	display:block;
+	margin:1em 0 0;
+
+}
+
+/*-- TERMINO DE CAMPIONES --*/
+
+/* //UNIVERSO LEAGUEOFLEGENDS*/
+.universolol{
+	padding: 0;
+	margin: 0;
+}
+.main-uwu{
+	width: 90%;
+	max-width: 1000px;
+
+	margin: 20px auto;
+}
+.slides{
+	width: 100%;
+}
+.slides img{
+	width: 100%;
+
+}
+.slidesjs-pagination{
+	background: #424242;
+	list-style:none;
+	overflow: hidden;
+
+}
+.slidesjs-pagination li{
+	float: left;
+}
+.slidesjs-pagination li a{
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	text-decoration: none;
+}
+.slidesjs-pagination li a:hover{
+	background:#000;
+}
+.slides .active{
+	background:#000;
+}
+.slidesjs-navigation{
+	background: #000;
+	color:#fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 13.5px 20px;
+	float:right;
+}
+/* //TERMINO UNIVERSO LEAGUEOFLEGENDS*/
+
+/*novedadesoe*/
+.novedades{
+	padding:5em 0;
+}
+.about-bottom{
+	padding:5em 0 0;
+}
+.agileits_novedades_grid_right h{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.agileits_novedades_grid_right p{
+    margin: 2em 0 0em;
+    line-height: 2em;
+    color: #999;
+    font-size: .875em;
+}
+.agileits_welcome_grid_right p i{
+	display:block;
+	margin:1em 0 0;
+
+}
+.agileits_novedades_grid_left h{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.agileits_novedades_grid_left p{
+    margin: 2em 0 0em;
+    line-height: 2em;
+    color: #999;
+    font-size: .875em;
+}
+.agileits_welcome_grid_left p i{
+	display:block;
+	margin:1em 0 0;
+
+
+}
+/* fin novedadesoe*/
+/*contactos*/
+.area{
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 160px;
+	min-height: 160px;
+}
+h1{
+	text-align: center
+}
+
+.col-col{
+	color: white;
+}
+
+.threed:hover
+{
+box-shadow:
+1px 1px #53a7ea,
+2px 2px #53a7ea,
+3px 3px #53a7ea;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+}
+/*fin contactos*/
+/*reloj*/
+
+   .wrap{
+	width: 90%;
+	max-width: 1000px;
+	/*margin:auto;*/
+   }
+
+   .widget{
+	width: 40%;
+	margin: 2em;
+	/*margin:32px;*/
+   }
+
+   .widget p {
+	display: inline-block;
+	line-height: 1em;
+   }
+
+   .fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	background: rgba(0,0,0,.5);
+	padding: 20px;
+	width: 100%;
+   }
+
+   .reloj{
+	font-family: Oswald, Arial;
+	width: 100%;
+	padding: 20px;
+	font-size: 4em;
+	text-align: center;
+	background: rgba(0,0,0,.5);
+   }
+
+   .reloj .caja-segundos{
+	display: inline-block;
+   }
+
+   .reloj .segundos, .reloj .ampm{
+	font-size: 32px;
+	display: block;
+   }
+   /* fin reloj*/

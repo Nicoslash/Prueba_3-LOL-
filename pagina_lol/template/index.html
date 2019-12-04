@@ -1,0 +1,206 @@
+
+{% load staticfiles %}
+<!-- INICIAR COPIAR -->
+<!--DISEÑADO POR ALGUIEN :)-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>{% block titulo %}LeagueStar: Conoce la historia del Universo lol y sus Campeones{% endblock titulo %}</title>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!--// css -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+</head>
+<body>
+  <DIV>
+    <!--INICIO BANNER-->
+    <div class="banner" id ="b">
+        <div class="banner-dot">
+            <!--INICIO HEADER-TOP-->
+            {% block headertop %}
+            <div class="header-top">
+                <div class="container">
+                    <!--LOGO PAGINA-->
+
+                    <div class="col-md-6 header-left">
+                        <a href="{% url 'lol:index' %}"><img src="{% static 'imagen/logo.png' %}" alt="350" width="110px" height="100px"/></h2</a>
+
+                    </div>
+
+                    <!--CONTACTOS-->
+
+                    <div class="col-md-6 header-middle">
+                        <ul>
+                            <h2>LeagueStars</h2>
+                        </ul>
+                    </div>
+
+                    <!--DESCARGA LEAGUEOFLEGENDS-->
+                    <div class="col-md-6 header-right">
+                        <a href="https://signup.las.leagueoflegends.com/es/signup/redownload"><img src="{% static 'imagen/logolol.png' %}" alt=" " width="110px" height="60px"/></a>
+                    </div>
+
+
+                </div>
+            </div>
+            {% endblock headertop %}
+            <!--FIN DE HEADER-TOP-->
+
+            <!--INICIO HEADER-->
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+							    <span class="icon-bar"></span>
+
+                            </button>
+                        </div>
+                        <!--navbar-header-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="{% url 'lol:index' %}" >INICIO</a></li>
+                                <li><a href="#a" >¿QUIENES SOMOS?</a></li>
+                                <li><a href="{% url 'lol:universolol' %}" >UNIVERSO LOL</a></li>
+                                <li><a href="{% url 'lol:campeones' %}" >CAMPEONES</a></li>
+                                <li><a href="{% url 'lol:novedades' %}" >NOVEDADES</a></li>
+                                <li><a href="{% url 'lol:login' %}" >CREACION DE NOTICIAS</a></li>
+
+                                <!--*<li><a href="Contactos.html" >CONTACTANOS</a></li>
+                                <li><a href="#e" class="scroll">SOPORTE</a></li>
+                                <li><a href="#e" class="scroll">FORO</a></li>*-->
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--FIN HEADER-->
+
+            <!--INICIO BANNER INFORMACION-->
+            <div class="banner-info">
+                    <div class="container">
+                        <div class="uwu-text">
+                            <h3>Es una depredadora mortífera que reside en un palacio cerrado y sin luz,
+                                <br>en las profundidades de la ciudad más vieja de Noxus</h3>
+                            <label></label>
+                            <h2>"Elise"</h2>
+                        </div>
+                    </div>
+            </div>
+            <!--FIN BANNER INFORMACION-->
+        </div>
+    </div>
+    <!--FIN BANNER TOTAL-->
+    <!-- //FIN COPIAR -->
+
+    <!--INICIO QUIENES SOMOS-->
+    <div class="quienessomos" id="a">
+        <div class="container">
+            <div class="col-md-6 agileits_quienessomos_grid_left">
+                <img src="{% static 'imagen/imagen.principal.png' %}" alt=" " class="img-responsive" />
+            </div>
+            <div class="col-md-6 agileits_quienessomos_grid_right">
+                <h3>¿Quienes Somos?</h3>
+                <p>Somo un grupo con la intencion de darte toda la informacion de league of legends,
+                    Los campionatos, las mejores buil para cada campion, y mucho mas
+                    <i>Nos puedes contactar y consultarnos cualquer duda que tengas, nosotros te
+                        ayudaremos y te responderemos
+                    </i>
+                </p>
+            </div>
+
+        </div><br>
+        <div class="container">
+                <div class="col-md-6 agileits_quienessomos_grid_left">
+                    <img src="{% static 'imagen/grietabit.png' %}" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-6 agileits_quienessomos_grid_right">
+                    <h3>¿Qué es League of legends?</h3>
+                    <p>Es el juego mas jugado a nivel mundial, moviendo una gra cantidad de masa,
+                        llegando al punto de ser un juego competitivo y considerado un deporte que
+                        se celebra en world championship.
+                        Este juego está inspirado en el popular mapa personalizado del Warcraft III,
+                        Defense of the Ancients: Allstars diseñado por Steve «Guinsoo»
+                        Feak el cual a su vez está basado en el escenario de StarCraft
+                        «Aeon of Strife».
+                        <i> sin duda es un juego totalmente recomendable en donde podras compartir con tus amigo
+                            y hacerte de ellos.
+                        </i>
+                    </p>
+                </div>
+    </div>
+    {% if posts  %}
+      {% for post in posts %}
+    <div class="quienessomos" id="a">
+        <br>
+
+
+
+            <div class="container">
+                <div class="col-md-6 agileits_quienessomos_grid_left">
+                    <img src="{% static 'imagen/noti.png' %}" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-6 agileits_quienessomos_grid_right">
+                    <a href="{% url 'lol:detalle_post' post.slug %}"><h3>{{ post.titulo }}</h3></a>
+                    <h4></h4>
+                    <h5> Escrito por: <strong>{{ post.autor }}</strong>. Publicacion del día {{ post.fecha_creacion }}</h5>
+                    <p>{{ post.descripcion }} <br>
+                      PINCHA PARA SABER MÁS
+                    </p>
+                </div>
+
+             </div><br>
+          {% endfor %}
+        {% else %}
+          <<h1>No existe Post registrados UWU</h1>
+
+    </div>
+    {% endif %}
+
+
+    <!-- FIN QUIENES SOMOS -->
+<div class="centrado">
+    <div class="wrap">
+        <div class="widget">
+         <div class="fecha">
+          <p id="diaSemana" class="diaSemana"></p>
+          <p id="dia" class="dia"></p>
+          <p id="mes" class="mes"></p>
+          <p id="year" class="year"></p>
+         </div>
+        <div class="reloj">
+          <p id="horas" class="horas"></p>
+          <p>:</p>
+          <p id="minutos" class="minutos"></p>
+          <p>:</p>
+
+         <div class="caja-segundos">
+          <p id="ampm" class="ampm"></p>
+          <p id="segundos" class="segundos"></p>
+         </div>
+         </div>
+         </div>
+          </div>
+        </div>
+       </div>
+       <script src="{% static 'js/reloj.js' %}"></script>
+</div>
+    <footer>
+        <p id="final" class="centrado">&copy; 2019 LEAGUESTARS. TODOS LOS DERECHOS RESERVADOS | DISEÑADO POR NAANI? | MAIL: leaguestars@gmail.com</p>
+    </footer>
+</body>
+</html>

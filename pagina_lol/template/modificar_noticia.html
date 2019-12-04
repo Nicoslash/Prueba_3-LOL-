@@ -1,0 +1,131 @@
+
+{% load staticfiles %}
+<!-- INICIAR COPIAR -->
+<!--DISEÑADO POR ALGUIEN :)-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>{{ detalle_post.titulo }}</title>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!--// css -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+</head>
+<body>
+  <!--INICIO BANNER-->
+  <div class="banner" id ="b">
+      <div class="banner-dot">
+          <!--INICIO HEADER-TOP-->
+          {% block headertop %}
+          <div class="header-top">
+              <div class="container">
+                  <!--LOGO PAGINA-->
+
+                  <div class="col-md-6 header-left">
+                      <a href="{% url 'lol:index' %}"><img src="{% static 'imagen/logo.png' %}" alt="350" width="110px" height="100px"/></h2</a>
+
+                  </div>
+
+                  <!--CONTACTOS-->
+
+                  <div class="col-md-6 header-middle">
+                      <ul>
+                          <h2>CREACION DE NOTICIAS</h2>
+                      </ul>
+                  </div>
+
+                  <!--DESCARGA LEAGUEOFLEGENDS-->
+                  <div class="col-md-6 header-right">
+                      <a href="https://signup.las.leagueoflegends.com/es/signup/redownload"><img src="{% static 'imagen/logolol.png' %}" alt=" " width="110px" height="60px"/></a>
+                  </div>
+
+
+              </div>
+          </div>
+          {% endblock headertop %}
+          <!--FIN DE HEADER-TOP-->
+
+          <!--INICIO HEADER-->
+          <div class="header">
+              <div class="container">
+                  <nav class="navbar navbar-default">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+                          </button>
+                      </div>
+                      <!--navbar-header-->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="{% url 'lol:index' %}" >SALIR</a></li>
+                              <li><a href="{% url 'lol:listar_noticias' %}" >LISTAR NOTICIAS</a></li>
+
+                          </ul>
+
+                      </div>
+                  </nav>
+              </div>
+          </div>
+          <!--FIN HEADER-->
+
+          <!--INICIO BANNER INFORMACION-->
+          <div class="banner-info">
+                  <div class="container">
+                      <div class="uwu-text">
+                          <h3>uwu</h3>
+                          <label></label>
+                          <h2>UWU</h2>
+                      </div>
+                  </div>
+          </div>
+          <!--FIN BANNER INFORMACION-->
+      </div>
+  </div>
+    <!--FIN BANNER TOTAL-->
+    <!-- //FIN COPIAR -->
+
+    <!--INICIO QUIENES SOMOS-->
+    <br>
+
+    <div class="container">
+      <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+          {{ form.as_table }}
+        </table>
+
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Modificar">
+
+      </form>
+
+      {{ mensaje }}
+
+
+
+
+
+    </div><br>
+
+
+
+
+    <footer>
+        <p id="final" class="centrado">&copy; 2019 LEAGUESTARS. TODOS LOS DERECHOS RESERVADOS | DISEÑADO POR NAANI? | MAIL: leaguestars@gmail.com</p>
+    </footer>
+</body>
+</html>

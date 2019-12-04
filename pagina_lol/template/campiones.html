@@ -1,0 +1,274 @@
+{% load staticfiles %}
+
+<!-- INICIAR COPIAR-->
+<!--DISEÑADO POR ALGUIEN :)-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>LeagueStar: Conoce la historia del Universo lol y sus Campeones</title>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="{% static '' %}css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!--// css -->
+</head>
+<body>
+    <!--INICIO BANNER-->
+    <div class="banner-campeones">
+        <div class="banner-dot">
+
+            <!--INICIO HEADER-TOP-->
+            <div class="header-top">
+                <div class="container">
+                    <!--LOGO PAGINA-->
+
+                    <div class="col-md-6 header-left">
+                        <a href="{% url 'lol:index' %}"><img src="{% static 'imagen/logo.png' %}" alt="350" width="110px" height="100px"/></h2</a>
+
+                    </div>
+
+                    <!--CONTACTOS-->
+
+                    <div class="col-md-6 header-middle">
+                        <ul>
+                            <h2>LeagueStars</h2>
+                        </ul>
+                    </div>
+
+                    <!--DESCARGA LEAGUEOFLEGENDS-->
+                    <div class="col-md-6 header-right">
+                        <a href="https://signup.las.leagueoflegends.com/es/signup/redownload"><img src="{% static 'imagen/logolol.png' %}" alt=" " width="110px" height="60px"/></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!--FIN DE HEADER-TOP-->
+
+            <!--INICIO HEADER-->
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+							    <span class="icon-bar"></span>
+
+                            </button>
+                        </div>
+                        <!--navbar-header-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="{% url 'lol:index' %}" >INICIO</a></li>
+                              <li><a href="{% url 'lol:index' %}" >¿QUIENES SOMOS?</a></li>
+                              <li><a href="{% url 'lol:universolol' %}" >UNIVERSO LOL</a></li>
+                              <li><a href="{% url 'lol:campeones' %}" >CAMPEONES</a></li>
+                              <li><a href="{% url 'lol:novedades' %}" >NOVEDADES</a></li>
+                              <li><a href="{% url 'lol:login' %}" >CREACION DE NOTICIAS</a></li>
+                              <!--*<li><a href="Contactos.html" >CONTACTANOS</a></li>
+                              <li><a href="#e" class="scroll">SOPORTE</a></li>
+                              <li><a href="#e" class="scroll">FORO</a></li>*-->
+                          </ul>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--FIN HEADER-->
+
+            <!--INICIO BANNER INFORMACION-->
+            <div class="banner-info">
+                    <div class="container">
+                        <div class="uwu-text">
+                            <h3>Es una depredadora mortífera que reside en un palacio cerrado y sin luz,
+                                <br>en las profundidades de la ciudad más vieja de Noxus</h3>
+                            <label></label>
+                            <h2>"Elise"</h2>
+                        </div>
+                    </div>
+            </div>
+            <!--FIN BANNER INFORMACION-->
+        </div>
+    </div>
+        <!--FIN BANNER TOTAL-->
+         <!--FIN BANNER INFORMACION-->
+        </div>
+    </div>
+
+    <!--FIN BANNER TOTAL-->
+    <!--Champs-->>
+    <div class="Campiones" id="c">
+            <div class="container">
+                <div class="col-md-6 agileits_campiones_grid_left">
+                    <img src="{% static 'imagen/Campeones/Aatrox.jpg' %}" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-6 agileits_campiones_grid_right">
+
+                    <h3> Aatrox </br>
+                        la Espada Darkin</h3>
+                    <p> Alguna vez honorables defensores de Shurima contra el Vacío,
+                        Aatrox y sus hermanos se convertirían con el tiempo en una mayor amenaza para Runaterra,
+                        y fueron derrotados solo con brujería astuta y mortal. Pero después de siglos de encarcelamiento,
+                        Aatrox fue el primero en encontrar la libertad de nueva cuenta, corrompiendo y transformando a aquellos
+                        lo suficientemente tontos como para intentar blandir el arma mágica que contenía su esencia.
+                        Ahora, con carne robada, él camina por Runaterra en una brutal
+                        aproximación a su forma pasada, buscando una venganza apocalíptica y muy retrasada.
+                    </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div><br>
+    </div>
+    <div class="Campiones" id="c">
+            <div class="container">
+                <div class="col-md-6 agileits_campiones_grid_left">
+                    <img src="{% static 'imagen/Campeones/Kayn.jpg' %}" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-6 agileits_campiones_grid_right">
+
+                    <h3> Shieda Kayn </br>
+                        el Segador Sombrío</h3>
+                    <p> Un practicante sin igual de la letal magia sombría, lucha para alcanzar su verdadero
+                        destino: conducir la Orden de la Sombra hacia una nueva era de supremacía jonia.
+                        Esgrime el arma Darkin viviente Rhaast, inmutable ante la progresiva corrupción de su cuerpo y su mente.
+                        Solo hay dos resultados posibles: o Kayn somete el arma a su voluntad...
+                        o la guadaña malévola lo consume por completo, dando lugar a la destrucción de Runaterra.
+                    </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div><br>
+    </div>
+    <div class="Campiones" id="c">
+            <div class="container">
+                <div class="col-md-6 agileits_campiones_grid_left">
+                    <img src="{% static 'imagen/Campeones/Garen.jpg' %}" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-6 agileits_campiones_grid_right">
+
+                    <h3> Garen </h3>
+                    <p> Como un orgulloso y noble guerrero, Garen forma parte de la Vanguardia Intrépida.
+                        Es popular entre sus compañeros y bastante respetado por sus enemigos.
+                        Es descendiente de la prestigiosa familia Guardia de la Corona y se le confió la tarea de defender
+                        a Demacia y sus ideales. Vistiendo una armadura resistente a la magia y empuñando una gran espada,
+                        Garen está listo para enfrentar a los magos y hechiceros en el campo de batalla
+                        con su imparable remolino de acero justiciero.
+                    </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div><br>
+    </div>
+    <div class="Campiones" id="c">
+            <div class="container">
+                <div class="col-md-6 agileits_campiones_grid_left">
+                    <img src="{% static 'imagen/Campeones/Maestro Yi.jpg' %}" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-6 agileits_campiones_grid_right">
+
+                    <h3> Maestro Yi </h3>
+                    <p> El Maestro Yi templó su cuerpo y afinó su mente para que su forma de pensar y actuar se convirtieran casi en uno.
+                        A pesar de que solo elige actuar con violencia como último recurso, la gracia y velocidad de su espada garantizan
+                        que la resolución siempre sea ágil. Como uno de los últimos practicantes del arte jonio de Wuju,
+                        Yi ha dedicado su vida a continuar el legado de su gente y buscar a posibles nuevos discípulos con las Siete
+                        Gafas del Saber para identificar a los más dignos
+                    </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div><br>
+    </div>
+    <div class="Campiones" id="c">
+            <div class="container">
+                <div class="col-md-6 agileits_campiones_grid_left">
+                    <img src="{% static 'imagen/Campeones/Riven.jpg' %}" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-6 agileits_campiones_grid_right">
+
+                    <h3> Riven </h3>
+                    <p>Hace tiempo, fue una guerrera en las huestes de Noxus, pero hoy, Riven está exiliada en una tierra que alguna vez intentó conquistar.
+                        Alcanzó un alto rango gracias a la fuerza de su convicción y a su brutal eficiencia,
+                        por lo que fue recompensada con una espada rúnica legendaria y con un batallón propio.
+                        Sin embargo, en el frente jonio, la fe de Riven en su tierra natal fue puesta a prueba y,
+                        finalmente, se quebró. Tras haber cortado todas sus ataduras al imperio, ahora busca encontrar
+                        su lugar en un mundo fragmentado, incluso ante los rumores sobre la restauración de Noxus.
+                    </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div><br>
+    </div>
+    <div class="Campiones" id="c">
+        <div class="container">
+            <div class="col-md-6 agileits_campiones_grid_left">
+                <img src="{% static 'imagen/Campeones/Varus.jpg' %}" alt=" " class="img-responsive" />
+            </div>
+            <div class="col-md-6 agileits_campiones_grid_right">
+
+                <h3> Varus </h3>
+                <p> De la antigua raza de los Darkin, era un asesino mortal que disfrutaba atormentando a sus enemigos
+                    y llevándolos al borde de la locura antes de dispararles la flecha asesina.
+                    Fue encarcelado al final de la Gran Guerra Darkin, pero escapó siglos después en la carne reconstruida de dos
+                    cazadores jonios que lo liberaron involuntariamente y que ahora están condenados a portar el arco que contiene su
+                    esencia atada. Ahora, Varus busca a aquellos que lo encerraron para ejecutar su brutal venganza,
+                    pero las almas atadas a él le hacen frente a cada paso que da.
+                </p>
+            </div>
+            <div class="clearfix"> </div>
+        </div></br>
+    </div>
+    <div class="container">
+        <div class="col-md-6 agileits_campiones_grid_left">
+            <img src="{% static 'imagen/Campeones/Xayah.jpg' %}" alt=" " class="img-responsive" />
+        </div>
+        <div class="col-md-6 agileits_campiones_grid_right">
+
+            <h3> Xayah </h3>
+            <p> Letal y precisa, Xayah es una vastayana revolucionaria que lleva a cabo una guerra personal para salvar a su gente.
+                Utiliza su velocidad, astucia y plumas afiladas para abatir a cualquiera que se interponga en su camino.
+                Xayah pelea junto a su compañero y amante Rakan para proteger a su decreciente tribu y devolver la gloria a su raza
+            </p>
+        </div>
+        <div class="clearfix"> </div>
+    </div></br>
+</div>
+<div class="container">
+        <div class="col-md-6 agileits_campiones_grid_left">
+            <img src="{% static 'imagen/Campeones/Kayle.jpg' %}" alt=" " class="img-responsive" />
+        </div>
+        <div class="col-md-6 agileits_campiones_grid_right">
+
+            <h3> Kayle </h3>
+            <p> Nacida de un Aspecto targoniano durante el clímax de las Guerras Rúnicas,
+                Kayle honra el legado de su madre al pelear por la justicia con sus alas de fuego divino.
+                Ella y su hermana gemela Morgana fueron las protectoras de Demacia durante años,
+                hasta que las constantes fallas de los mortales decepcionaron a Kayle, por lo que abandonó este reino para siempre.
+                Hasta el día de hoy se cuentan leyendas sobre cómo castigó a los injustos con sus espadas ardientes,
+                y muchos esperan que algún día regrese.
+            </p>
+        </div>
+        <div class="clearfix"> </div>
+    </div></br>
+</div>
+<div class="container">
+        <div class="col-md-6 agileits_campiones_grid_left">
+            <img src="{% static 'imagen/Campeones/Brand.jpg' %}" alt=" " class="img-responsive" />
+        </div>
+        <div class="col-md-6 agileits_campiones_grid_right">
+
+            <h3> Brand </h3>
+            <p> La criatura conocida como Brand, quien alguna vez fuera Kegan Rhode, miembro de una tribu del gélido Fréljord,
+            es una lección sobre la tentación de un poder mayor. En la búsqueda de una de las legendarias Runas Geogénicas,
+            Kegan traicionó a sus compañeros y se la quedó para sí mismo; en un instante, el hombre dejó de serlo. Su alma se consumió,
+            su cuerpo se convirtió en un recipiente de la llama viva. Ahora, Brand merodea en Valoran en busca de otras Runas,
+            jurando vengarse por los males que ni en una decena de vidas mortales podría haber sufrido.
+            </p>
+        </div>
+        <div class="clearfix"> </div>
+    </div></br>
+</div>
+</body>
+</html>

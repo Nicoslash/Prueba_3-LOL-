@@ -1,0 +1,212 @@
+{% load staticfiles %}
+<!--DISEÑADO POR ALGUIEN :)-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>LeagueStar: Conoce la historia del Universo lol y sus Campeones</title>
+
+
+        <title>LeagueStar: Conoce la historia del Universo lol y sus Campeones</title>
+
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!-- bootstrap-css -->
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+        <!--// bootstrap-css -->
+        <!-- css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+
+        <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <!--// css -->
+
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <!--INICIO BANNER-->
+    <div class="banner-universo">
+        <div class="banner-dot">
+            <!--INICIO HEADER-TOP-->
+            <div class="header-top">
+                <div class="container">
+                    <!--LOGO PAGINA-->
+
+                    <div class="col-md-6 header-left">
+                        <a href="{% url 'lol:index' %}"><img src="{% static 'imagen/logo.png' %}" alt="350" width="110px" height="100px"/></h2</a>
+
+                    </div>
+
+                    <!--CONTACTOS-->
+
+                    <div class="col-md-6 header-middle">
+                        <ul>
+                            <h2>UniversoLOL</h2>
+                        </ul>
+                    </div>
+
+                    <!--DESCARGA LEAGUEOFLEGENDS-->
+                    <div class="col-md-6 header-right">
+                        <a href="https://signup.las.leagueoflegends.com/es/signup/redownload"><img src="{% static 'imagen/logolol.png' %}" alt=" " width="110px" height="60px"/></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!--FIN DE HEADER-TOP-->
+
+            <!--INICIO HEADER-->
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+							    <span class="icon-bar"></span>
+
+                            </button>
+                        </div>
+                        <!--navbar-header-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="{% url 'lol:index' %}" >INICIO</a></li>
+                              <li><a href="{% url 'lol:index' %}" >¿QUIENES SOMOS?</a></li>
+                              <li><a href="{% url 'lol:universolol' %}" >UNIVERSO LOL</a></li>
+                              <li><a href="{% url 'lol:campeones' %}" >CAMPEONES</a></li>
+                              <li><a href="{% url 'lol:novedades' %}" >NOVEDADES</a></li>
+                              <li><a href="{% url 'lol:login' %}" >CREACION DE NOTICIAS</a></li>
+                              <!--*<li><a href="Contactos.html" >CONTACTANOS</a></li>
+                              <li><a href="#e" class="scroll">SOPORTE</a></li>
+                              <li><a href="#e" class="scroll">FORO</a></li>*-->
+                          </ul>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--FIN HEADER-->
+
+            <!--INICIO BANNER INFORMACION-->
+            <div class="banner-info">
+                    <div class="container">
+                        <div class="uwu-text-universo">
+                            <h3>Explora y conoce</h3>
+                            <label></label>
+                            <h2>RUNATERRA</h2>
+                        </div>
+                    </div>
+            </div>
+            <!--FIN BANNER INFORMACION-->
+        </div>
+    </div>
+    <!--// FIN BANNER TOTAL-->
+
+    <!--INICIO UNIVERSOLOL-->
+    <div class="universolol" id="a">
+        <div class="main-uwu">
+            <div class="slides">
+                <div>
+                    <h1 class="centrado">Aguas Estancadas</h1>
+                    <H6>Aguas Estancadas es una ciudad portuaria muy particular enclavada en el archipiélago de las Islas de la Llama Azul. Alberga cazadores de serpientes, bandas portuarias y contrabandistas de todas partes del mundo. Aquí se puede hacer una fortuna en un instante, y los sueños de cualquiera pueden quedar hechos añicos con la misma rapidez. Para quienes huyen de la justicia, de las deudas o son perseguidos, Aguas Estancadas es una ciudad para comenzar de nuevo; en sus retorcidas calles a nadie le importa tu pasado. Pese a todo y, día tras día, el alba revela los cadáveres de viajeros despistados flotando en el muelle con las carteras vacías y los gaznates cercenados...</H6>
+                    <img src="{% static 'imagen/universolols/aguasestancadas2.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Ciudad de Bandle</h1>
+                    <H6>Hay muchas opiniones contradictorias sobre dónde se sitúa el hogar de los yordles, aunque son solo unos pocos mortales los que aseguran haber cruzado los senderos invisibles que conducen a una tierra de un misticismo peculiar más allá del reino material. Se habla de un lugar donde la magia es libre, donde los imprudentes pueden ser tentados por una miríada de maravillas, y quedar atrapados en un sueño... Se dice que en Ciudad de Bandle las sensaciones son más vívidas para quienes no son yordles. Los colores son más brillantes. La comida y la bebida intoxican los sentidos durante años y, una vez probadas, son imposibles de olvidar.</H6>
+                    <img src="{% static 'imagen/universolols/ciudaddebandle.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Demacia</h1>
+                    <H6>Demacia es una sociedad fuerte y honesta con un prestigioso historial militar. Valora los ideales de justicia, honor y deber. Demacia es una sociedad agraria autosuficiente, abundante en fértiles terrenos de cosecha, densos bosques que procuran toda la madera y los recursos minerales necesarios. Su carácter natural es defensivo y aislado, debido en parte a los frecuentes ataques bárbaros, a los saqueos y a las civilizaciones que buscan expandirse. Demacia es una de las fuerzas dominantes en Valoran, y cuenta con el ejército de élite mejor entrenado de Runaterra.</H6>
+                    <img src="{% static 'imagen/universolols/demacia.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">El Vacío</h1>
+                    <H6>Comenzando a gritos su existencia junto al nacimiento del universo, el Vacío es una manifestación de la nada incognoscible que habita más allá. Es una fuerza de hambre insaciable que espera durante eones hasta que sus maestros, los misteriosos Vigilantes, marquen el momento de la destrucción definitiva. Ser un mortal tocado por este poder es sufrir un atisbo agónico de la irrealidad eterna, suficiente para minar incluso la mente más fuerte. Los habitantes del reino del Vacío son criaturas, a menudo con una sensibilidad limitada, pero con un objetivo singular: conducir a Runaterra a su desaparición total.</H6>
+                    <img src="{% static 'imagen/universolols/elvacio.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Freljord</h1>
+                    <H6>Freljord es una región fría e inmisericorde. Orgullosa e independiente, su gente son guerreros desde su nacimiento, y hay una fuerte cultura de saqueo. En Freljord hay varias tribus individuales, actualmente en una guerra civil a tres bandos que determinará el futuro de todos ellos. Una tribu rinde homenaje a las tradiciones que han permitido su supervivencia; otra persigue el sueño de un futuro unidos de una joven idealista; y el tercero adora el poder de una enigmática hechicera.</H6>
+                    <img src="{% static 'imagen/universolols/freljord.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Islas de la sombra</h1>
+                    <H6>Las tierras conocidas actualmente como las Islas de la Sombra antes eran un hermoso reino, pero un cataclismo mágico acabo con él. La Niebla Negra cubre permanentemente las islas y la tierra misma ha sido mancillada, corrupta por un encantamiento maléfico. La propia isla drena la vida de quienes caminen sobre ella y, a cambio, atrae a los insaciables espíritus depredadores de los muertos. Quienes mueren a manos de la Niebla Negra son condenados a deambular por esta melancólica tierra para el resto de la eternidad. Y lo peor es que el poder de las Islas de la Sombra aumenta cada vez más, al igual que su alcance para segar las almas de toda Runaterra.</H6>
+                    <img src="{% static 'imagen/universolols/isladelasombra.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Ixtal</h1>
+                    <H6>Famosa por su domino de la magia elemental, Ixtal fue una de las primeras naciones independientes en unirse al imperio de Shurima. En realidad, la cultura de Ixtal es mucho más antigua, pues formó parte de la gran diáspora occidental a partir de la cual se alzaron numerosas civilizaciones, entre las que figuran los Buhru, la magnífica ciudad de Helia y los ascetas de Targon. También se considera que desempeñó un papel importante en la creación de los primeros Ascendidos. Los magos de Ixtal sobrevivieron al Vacío y, más adelante, a los Oscuros. Con ese fin, se distanciaron de sus vecinos y se refugiaron en el abrigo de las tierras salvajes que los rodeaban.</H6>
+                    <img src="{% static 'imagen/universolols/ixtal.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Jonia</h1>
+                    <H6>Rodeada por traicioneros mares, Jonia está formada por una serie de provincias aliadas desperdigadas a lo largo y ancho de un inmenso archipiélago. El equilibrio es una de las piedras angulares de la cultura jonia, por lo que los límites que separan el mundo material del espiritual son aquí más difusos que en el resto de Runaterra, especialmente en las profundidades de sus bosques y lo alto de sus cumbres. A pesar de que  sus habitantes místicos y peligrosos, Jonia prosperó durante siglos. Los monasterios de guerreros y las milicias provinciales. Sin embargo, esta paz llegó a su fin hace doce años, cuando Noxus atacó las Tierras Primigenias.</H6>
+                    <img src="{% static 'imagen/universolols/jonia.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Noxus</h1>
+                    <H6>Noxus es un poderoso imperio con una reputación aterradora. Para quienes no se encuentran en el interior de sus fronteras, Noxus es una civilización amenazante cuya expansión no se detiene. Quienes miran más allá de su exterior militarizado descubren una sociedad sorprendentemente inclusiva que respeta y cultiva la fuerza y el talento de sus habitantes. Sus gentes tenían una fuerte cultura nómada y de saqueo hasta que terminaron en la ciudad ancestral que hoy en día es el corazón del imperio. Amenazados por todos los bandos, decidieron llevar la lucha a terreno enemigo, y cada año sus fronteras avanzan más y más.</H6>
+                    <img src="{% static 'imagen/universolols/noxus.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Piltover</h1>
+                    <H6>Piltover es una ciudad progresista, con un poder e influencia en auge. Es el centro cultural de Valoran y el arte, la artesanía, el comercio y la innovación siempre van de la mano. Su poder no es de carácter militar, sino comercial y emprendedor. Situado en los acantilados que lo separan de Zaun por el océano, Piltover acoge a flotas enteras de barcos mercantiles que cruzan las gigantes puertas marítimas para traer bienes provenientes del resto del mundo. Esta riqueza ha provocado un crecimiento sin precedentes en la ciudad. Piltover se ha ido convirtiendo en una ciudad en la que se puede hacer una fortuna y vivir un sueño.</H6>
+                    <img src="{% static 'imagen/universolols/piltover.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Shurima</h1>
+                    <H6>El imperio de Shurima una vez fue una civilización que recubría un vasto desierto. Tras una era de crecimiento y prosperidad, la caída de la resplandeciente capital dejó al imperio en ruinas. Con el paso de los milenios, los cuentos de la gloriosa ciudad de Shurima se convirtieron en mito y religión para los descendientes de los dispersos supervivientes. Muchos de los habitantes nómadas de Shurima viven con lo más básico en una tierra inmisericorde. Algunos defienden pequeños puestos construidos alrededor de los pocos oasis. Otros van a la caza de riquezas enterradas del imperio caído o trabajan como mercenarios y se ganaban monedas por sus acciones antes de desaparecer en la arena.</H6>
+                    <img src="{% static 'imagen/universolols/shurima.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Targon</h1>
+                    <H6>El monte Targon es el mayor pico de Runaterra, una montaña de roca erosionada por el sol entre un grupo de montañas que sobrepasan en altura a todos los demás accidentes geográficos del planeta. Lejos de la civilización, la ubicación del monte Targon es remota e imposible de encontrar para todos salvo para los buscadores con más determinación. Son muchas las leyendas relacionadas con el monte Targon y, como tal, es un faro para los soñadores, los locos y los aventureros. Son muchas las almas valientes que intentan realizar el imposible ascenso, algunos buscando sabiduría, otros la gloria, o incluso satisfacer el deseo de llegar a la cima.</H6>
+                    <img src="{% static 'imagen/universolols/targon.png' %}" alt="">
+                </div>
+                <div>
+                    <h1 class="centrado">Zaun</h1>
+                    <H6>Zaun es un distrito suburbano que yace en los valles y cañones que conectan con Piltover. La poca luz que llega lo hace filtrada a través del humo generado en una maraña de tuberías, pues Zaun destaca por su arquitectura gris e industrial. En el pasado Zaun y Piltover estaban unidos. A pesar de que ahora están separadas, ambas sociedades mantienen una relación simbiótica. Zaun vive en un constante crepúsculo de niebla y humo, pero sus gentes continúan desarrollando su dinámica cultura. La riqueza de Piltover ha permitido que Zaun se desarrolle por efecto tándem, un espejo oscuro de la ciudad de las alturas. Muchos de los recursos que llegan a Piltover lo hacen desde mercados negros de Piltover.</H6>
+                    <img src="{% static 'imagen/universolols/zaun.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="{% static 'js/jquery.slides.js' %}"></script>
+        <script>
+            $(function(){
+            $(".slides").slidesjs({
+                play: {
+                active: true,
+                    // [boolean] Generate the play and stop buttons.
+                    // You cannot use your own buttons. Sorry.
+                effect: "slide",
+                    // [string] Can be either "slide" or "fade".
+                interval: 10000,
+                    // [number] Time spent on each slide in milliseconds.
+                auto: false,
+                    // [boolean] Start playing the slideshow on load.
+                swap: true,
+                    // [boolean] show/hide stop and play buttons
+                pauseOnHover: false,
+                    // [boolean] pause a playing slideshow on hover
+                restartDelay: 2500
+                    // [number] restart delay on inactive slideshow
+                }
+            });
+            });
+        </script>
+        <!--
+        <br>
+        <div class="col-md-6">
+            <img src="imagen/runaterra.png" alt="">
+        </div>-->
+
+    </div>
+    <br>
+    <footer>
+        <p id="final" class="centrado">&copy; 2019 LEAGUESTARS. TODOS LOS DERECHOS RESERVADOS | DISEÑADO POR NAANI? | MAIL: leaguestars@gmail.com</p>
+    </footer>
+</body>
+</html>

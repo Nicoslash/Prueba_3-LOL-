@@ -1,0 +1,66 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>{% block titulo %}LeagueStar: Conoce la historia del Universo lol y sus Campeones{% endblock titulo %}</title>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!--// css -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+</head>
+<body>
+  <div class="banner" id ="b">
+    <div class="banner-dot">
+      <div class="header">
+          <div class="container">
+              <nav class="navbar navbar-default">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+
+                      </button>
+                  </div>
+                  <!--navbar-header-->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a href="{% url 'lol:listar_noticias' %}" >Entrar</a></li>
+                      </ul>
+                  </div>
+
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="{% url 'lol:index' %}" >Salir</a></li>
+                  </ul>
+
+
+
+              </nav>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    Usuario: <br> <input type="text" size="30" maxlength="60"  name="nombre"><br>
+    Contraseña:<br>
+    <input type="password" size="30" maxlength="60" name="contraseña"> <br>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Recuperar Contraseña</a>
+
+
+
+
+
+  </div>
+</body>

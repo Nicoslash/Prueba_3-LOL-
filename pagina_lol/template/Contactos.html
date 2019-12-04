@@ -1,0 +1,118 @@
+<!--DISEÑADO POR ALGUIEN :)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LeagueStar: Conoce la historia del Universo lol y sus Campeones</title>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--// css -->
+</head>
+<body>
+    <!--INICIO BANNER-->
+    <div class="banner-contactos">
+        <div class="banner-dot">
+            <!--INICIO HEADER-TOP-->
+            <div class="header-top">
+                    <div class="container">
+                        <!--LOGO PAGINA-->
+
+                        <div class="col-md-6 header-left">
+                            <a href="index.html"><img src="imagen/logo.png" alt="350" width="110px" height="100px"/></h2</a>
+
+                        </div>
+
+                        <!--CONTACTOS-->
+
+                        <div class="col-md-6 header-middle">
+                            <ul>
+                                <h2>LeagueStars</h2>
+                            </ul>
+                        </div>
+
+                        <!--DESCARGA LEAGUEOFLEGENDS-->
+                        <div class="col-md-6 header-right">
+                            <a href="https://signup.las.leagueoflegends.com/es/signup/redownload"><img src="imagen/logolol.png" alt=" " width="110px" height="60px"/></a>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            <!--FIN DE HEADER-TOP-->
+
+            <!--INICIO HEADER-->
+            <div class="header">
+                    <div class="container">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+
+                                </button>
+                            </div>
+                            <!--navbar-header-->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right">
+                                  <li><a href="{% url 'lol:index' %}" >INICIO</a></li>
+                                  <li><a href="{% url 'lol:index' %}" >¿QUIENES SOMOS?</a></li>
+                                  <li><a href="{% url 'lol:universolol' %}" >UNIVERSO LOL</a></li>
+                                  <li><a href="{% url 'lol:campeones' %}" >CAMPEONES</a></li>
+                                  <li><a href="{% url 'lol:novedades' %}" >NOVEDADES</a></li>
+                                  <li><a href="{% url 'lol:foro' %}" >CREACION DE NOTICIAS</a></li>
+                                  <!--*<li><a href="Contactos.html" >CONTACTANOS</a></li>
+                                  <li><a href="#e" class="scroll">SOPORTE</a></li>
+                                  <li><a href="#e" class="scroll">FORO</a></li>*-->
+                              </ul>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            <!--FIN HEADER-->
+
+            <!--INICIO BANNER INFORMACION-->
+            <div class="banner-info col-col">
+                <h1>Informacion de Contacto</h1>
+                <br>
+                <form action="" class="container">
+                    <label for="">Nombre de Invocador*</label>
+                    <br>
+                    <input class="form-control input-lg" type="text" placeholder="Ingrese Nombres">
+                    <br>
+                    <label for="">Email*</label>
+                    <br>
+                    <input class="form-control input-lg " type="text" placeholder="Ingrese Email">
+                    <br>
+                    <label for="">Telefono</label>
+                    <br>
+                    <input class="form-control input-lg " type="text" placeholder="Ingrese Telefono">
+                    <br>
+                    <label for="">Comentarios*</label>
+                    <br>
+                    <textarea class="form-control input-lg area" rows="3"></textarea>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                </form>
+            </div>
+            <!--FIN BANNER INFORMACION-->
+        </div>
+    </div>
+    <!--FIN BANNER TOTAL-->
+
+
+    <br>
+    <footer>
+        <p id="final" class="centrado">&copy; 2019 LEAGUESTARS. TODOS LOS DERECHOS RESERVADOS | DISEÑADO POR ALGUIEN </a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+{% load staticfiles %}
+
+
+<!-- INICIAR COPIAR-->
+<!--DISEÑADO POR ALGUIEN :)-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>LeagueStar: Conoce la historia del Universo lol y sus Campeones</title>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!--// css -->
+</head>
+<body>
+    <!--INICIO BANNER-->
+    <div class="banner-novedades">
+        <div class="banner-dot">
+            <!--INICIO HEADER-TOP-->
+            <div class="header-top">
+                <div class="container">
+                    <!--LOGO PAGINA-->
+
+                    <div class="col-md-6 header-left">
+                        <a href="{% url 'lol:index' %}"><img src="{% static 'imagen/logo.png' %}" alt="350" width="110px" height="100px"/></h2</a>
+
+                    </div>
+
+                    <!--CONTACTOS-->
+
+                    <div class="col-md-6 header-middle">
+                        <ul>
+                            <h2>Novedades</h2>
+                        </ul>
+                    </div>
+
+                    <!--DESCARGA LEAGUEOFLEGENDS-->
+                    <div class="col-md-6 header-right">
+                        <a href="https://signup.las.leagueoflegends.com/es/signup/redownload"><img src="{% static 'imagen/logolol.png' %}" alt=" " width="110px" height="60px"/></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!--FIN DE HEADER-TOP-->
+
+            <!--INICIO HEADER-->
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+							    <span class="icon-bar"></span>
+
+                            </button>
+                        </div>
+                        <!--navbar-header-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="{% url 'lol:index' %}" >INICIO</a></li>
+                              <li><a href="{% url 'lol:index' %}" >¿QUIENES SOMOS?</a></li>
+                              <li><a href="{% url 'lol:universolol' %}" >UNIVERSO LOL</a></li>
+                              <li><a href="{% url 'lol:campeones' %}" >CAMPEONES</a></li>
+                              <li><a href="{% url 'lol:novedades' %}" >NOVEDADES</a></li>
+                              <li><a href="{% url 'lol:login' %}" >CREACION DE NOTICIAS</a></li>
+                              <!--*<li><a href="Contactos.html" >CONTACTANOS</a></li>
+                              <li><a href="#e" class="scroll">SOPORTE</a></li>
+                              <li><a href="#e" class="scroll">FORO</a></li>*-->
+                          </ul>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--FIN HEADER-->
+
+            <!--INICIO BANNER INFORMACION-->
+            <div class="banner-info">
+                    <div class="container">
+                        <div class="uwu-text">
+                            <h3>uwu
+                                <br>uwu awa juego</h3>
+                            <label></label>
+                            <h2>"Ahri"</h2>
+                        </div>
+                    </div>
+            </div>
+            <!--FIN BANNER INFORMACION-->
+        </div>
+    </div>
+    <!--FIN BANNER TOTAL-->
+    <!-- //FIN COPIAR CTM-->
+
+    <div class="novedades" id="a">
+        <div class="container">
+            <div class="col-md-6 agileits_novedades_grid_left">
+                <h3>Nueva promesa de servidor LAS, llegará a <br>jugar
+                     en Korea del Sur.
+                </h3>
+                <img src="{% static 'imagen/novedades/nuevoroster.jpg' %}" alt="" class="img-responsive"><br>
+                <p>El nuevo chico de 19 años promesa del equipo "UNIVERSAD DE CHILE" llegará al mejor equipo de Korea el cual es SKT-T1
+
+                </p>
+            </div>
+            <div class="col-md-6 agileits_novedades_grid_right">
+                <h3>Riot podría haber filtrado <br>
+                    el nuevo campeón de League of Legends
+                </h3>
+                <img src="{% static 'imagen/Campeones/campeonafiltrada.jpg' %}" alt="" class="img-responsive"><br>
+                <p>Riot Games ha lanzado el parche 9.16 al cliente oficial. Esto ha traído un número enorme de cambios en el juego, tanto en la versión normal como para <i>Tácticas Maestras</i>, pero en esta ocasión venimos a centrarnos en algo que ha ocurrido en el PBE.<br><br>
+                    Como muchos sabréis, en el servidor de pruebas se introducen los cambios que van a llegar en las siguientes versiones con el objetivo de que los usuarios puedan probarlo y dar su opinión, descubrir fallos... <i>Pues parece que en esta última actualización Riot Games ha filtrado información importante sin querer</i>.<br><br>
+                    <i>Se trataría del próximo campeón que debería llegar al juego</i>. Los usuarios se han encontrado una curiosa imagen en la pantalla de carga de una de las skins nuevas de Nocturne. Se trata de una chica con una especie de arma de rayos, lo que obviamente no tiene nada que ver con el personaje que debería aparecer. <br><br>
+                    Esto ha provocado una enorme cantidad de rumores sobre de qué podría tratarse esa imagen. Obviamente, <i>lo primero es pensar que se trata de un nuevo campeón</i>, posiblemente el ADC del que hablaron hace ya algunos meses.     <br><br>
+                    Pero las especulaciones no se quedan simplemente ahí. Algunos creadores de contenido muy importantes como The Catacroquer <i>han empezado a debatir si pudiese tratarse de Senna, la mujer de Lucian</i>. Obviamente, el lore del juego hace imposible esa idea, pero con unos pequeños cambios y una historia detallada podría terminar de encajar. <br><br>
+                    Por el momento, la compañía <i>no</i> ha dado ningún tipo de información al respecto
+                </p>
+            </div>
+            {% if posts  %}
+              {% for post in posts %}
+            <div class="quienessomos" id="a">
+                <br>
+
+
+
+                    <div class="container">
+                        <div class="col-md-6 agileits_quienessomos_grid_left">
+                            <img src="{% static 'imagen/novedadesuwu.png' %}" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-6 agileits_quienessomos_grid_right">
+                            <a href="{% url 'lol:detalle_post' post.slug %}"><h3>{{ post.titulo }}</h3></a>
+                            <h4>{{ post.descripcion }}</h4>
+                            <h5> Escrito por: <strong>{{ post.autor }}</strong>. Publicacion del día {{ post.fecha_creacion }}</h5>
+                            <p>PINCHA PARA SABER MÁS
+                            </p>
+                        </div>
+
+                     </div><br>
+                  {% endfor %}
+                {% else %}
+                  <<h1>No existe Post registrados UWU</h1>
+
+            </div>
+            {% endif %}
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    </body>
+    <!--
+    <table style="width:100%" class="centrado">
+
+
+
+  <tr>
+    <td><!INICIO NOVEDADES
+<div  id="novedades" text-align= "left">
+
+			<div id="nosotros" align= "left" >
+				<h2>Riot podría haber filtrado </h2>
+				<h2>el nuevo campeón de League of Legends</h2>
+				<div id="parrafo" text-align= "left">
+					<p>Riot Games ha lanzado el parche 9.16 al cliente oficial. Esto ha</p>
+					<p>traído un número enorme de cambios en el juego, tanto en la versión</p>
+					<p>normal como para Tácticas Maestras, pero en esta ocasión venimos</p>
+					<p>a centrarnos en algo que ha ocurrido en el PBE.</p>
+					<p> </p>
+					<p> </p>
+					<p>Como muchos sabréis, en el servidor de pruebas se introducen los</p>
+					<p>cambios que van a llegar en las siguientes versiones con el objetivo</p>
+					<p>de que los usuarios puedan probarlo y dar su opinión, descubrir</p>
+					<p>fallos... Pues parece que en esta última actualización Riot Games</p>
+					<p>ha filtrado información importante sin querer.</p>
+					<p> </p>
+					<p> </p>
+					<p>Se trataría del próximo campeón que debería llegar al juego. Los</p>
+					<p>usuarios se han encontrado una curiosa imagen en la pantalla de</p>
+					<p>carga de una de las skins nuevas de Nocturne. Se trata de una chica</p>
+					<p>con una especie de arma de rayos, lo que obviamente no tiene nada</p>
+					<p>que ver con el personaje que debería aparecer.</p>
+					<p> </p>
+					<p> </p>
+					<p> </p>
+					<p> </p>
+					<p> </p>
+					<p> </p>
+					<p> </p>
+					<p> </p>
+				</div>
+			</div>
+</div>
+// xd--></td>
+    <td><!--INICIO NOTICIAS2
+<div  id="servicios" style="text-align:justify" >
+		<h3 class="title clr">,</h3>
+
+		<div class="principales">
+			<div class="columna">
+			<h4>M</h4>
+					<p>Los</p>
+
+				</div>
+			</div>
+
+		</div>
+</div>
+// FIN NOTICIAS2</td>
+  </tr>
+</table>
+   -->
+    </html>

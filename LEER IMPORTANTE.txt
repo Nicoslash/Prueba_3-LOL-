@@ -1,0 +1,7 @@
+para poder ejecutar bien el programa es tener instalado python 3.6 mas el idle
+además de instalar django, para acceder bien al programa 
+se debe activar el entorno virtual que será en la carpeta
+ENTORNOVIRTUAL.../Scripts -> activate
+luego abrir
+pagina_lol -> python manage.py runserver 
+y listo
